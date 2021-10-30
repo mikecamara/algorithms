@@ -1,6 +1,6 @@
 # [HackerRank](https://www.hackerrank.com/) Algorithms Solved 
 
-All solutions have automated tests and I use TDD to write the function. 
+All solutions have automated tests and I use TDD approach to coding. 
 
 ## Start the project
 
