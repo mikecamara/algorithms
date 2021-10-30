@@ -28,3 +28,4 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 * ### [Find Medium](./src/find-medium/README.md)
 * ### [Minimum and Maximum](./src/min-max/README.md)
 * ### [Calculate Ratio](./src/ratio-categories/README.md)
+* ### [Lonely Element](./src/lonely-element/README.md)
