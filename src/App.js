@@ -1,22 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import './ratio-categories/Ratio';
+import plusMinus from './ratio-categories/Ratio';
+import minMax from './min-max/MinMax';
+import convertTime from './convert-time/ConvertTime';
+import alpha2CodeToCountry from './alpha2code-to-country-name/Alpha2CodeToCountry';
 
 function App() {
+  // var resultsPlusMinus = plusMinus();
+  // var resultsMinMax = minMax();
+  // var convertedTime = convertTime();
+  var javascriptIsFun = minMax([0,5,4,3,2,1]);
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Having fun with algorithms.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+        <p>
+          {javascriptIsFun}
+        </p>
+
+        
       </header>
     </div>
   );
