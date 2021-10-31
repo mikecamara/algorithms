@@ -1,24 +1,23 @@
-function lonelyinteger(a) {
-    // Write your code here
-    var testedElements = [];
-    var duplidatedElements = [];
+function lonelyinteger(arrayWithNumbers) {
     var soloElement = null;
-    for(var i=0; i < a.length; i++) {
-        if (testedElements.includes(a[i])){
-            duplidatedElements.push(a[i]);
+    const receivedNumbers = {};
+    const duplidatedElements = {};
+    const doYouHaveThisNumber = num => receivedNumbers[num] === true;
+    const doYouHaveThisNumberDuplicated = num => duplidatedElements[num] === true;
+    for(var i=0; i < arrayWithNumbers.length; i++) {
+        if (doYouHaveThisNumber(arrayWithNumbers[i])){
+            duplidatedElements[arrayWithNumbers[i]] = true;
         } else {
-            testedElements.push(a[i])
-        } 
+            receivedNumbers[arrayWithNumbers[i]] = true;
+        }
     }
-    for(var i=0; i < a.length; i++) {
-        if (duplidatedElements.includes(a[i])){
-            continue;
-        } else {
-            soloElement = a[i];
+
+    for(var i=0; i < arrayWithNumbers.length; i++) {
+        if (!doYouHaveThisNumberDuplicated(arrayWithNumbers[i])){
+            soloElement = arrayWithNumbers[i];
             break;
-        } 
+        }
     }   
-    console.log(soloElement);
     return soloElement;
 }
 
